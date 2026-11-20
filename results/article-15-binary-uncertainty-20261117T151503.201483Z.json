@@ -1,0 +1,79 @@
+{
+  "article_id": "15",
+  "binary_minus_fp32_accuracy_mean": -0.07037037037037042,
+  "created_utc": "2026-11-17T15:15:03.198004+00:00",
+  "evidence_type": "computed_from_measured_public_dataset",
+  "experiment": "Uncertainty summary for the paired UCI digits FP32/BNN comparison",
+  "input_file": "evidence\\02_real\\article-02-digits-binary-20261117T144055.092711Z.json",
+  "input_sha256": "c385db600ec61b11a3fde009a3bd718172fd53cf284147c25db6c8c5d0b5564f",
+  "limitations": [
+    "Wilson intervals treat test images as independent Bernoulli trials; writer-level clustering is unavailable in this copy.",
+    "The t interval uses only three paired initialization seeds and is exploratory, not a stable population interval.",
+    "The three seeds use the same fixed test set, so seed variation does not measure test-set sampling variation.",
+    "The simple sample-size calculation is a Bernoulli proportion approximation, not power analysis for a paired model comparison."
+  ],
+  "mean_binary_accuracy": 0.8881481481481481,
+  "mean_fp32_accuracy": 0.9585185185185185,
+  "paired_seed_difference_sd": 0.019917525421850005,
+  "paired_seed_difference_t95": [
+    -0.11984824639553392,
+    -0.020892494345206916
+  ],
+  "per_seed_wilson_95": [
+    {
+      "binary_accuracy": 0.8711111111111111,
+      "binary_correct": 392,
+      "binary_wilson_95": [
+        0.8369819419318223,
+        0.8989576458009902
+      ],
+      "fp32_accuracy": 0.9644444444444444,
+      "fp32_correct": 434,
+      "fp32_wilson_95": [
+        0.9430282712851512,
+        0.9779979193505244
+      ],
+      "paired_accuracy_delta_binary_minus_fp32": -0.09333333333333338,
+      "seed": 7,
+      "test_rows": 450
+    },
+    {
+      "binary_accuracy": 0.8977777777777778,
+      "binary_correct": 404,
+      "binary_wilson_95": [
+        0.8663365524499982,
+        0.9224849218264894
+      ],
+      "fp32_accuracy": 0.9555555555555556,
+      "fp32_correct": 430,
+      "fp32_wilson_95": [
+        0.9323511924596783,
+        0.971047702661439
+      ],
+      "paired_accuracy_delta_binary_minus_fp32": -0.05777777777777782,
+      "seed": 17,
+      "test_rows": 450
+    },
+    {
+      "binary_accuracy": 0.8955555555555555,
+      "binary_correct": 403,
+      "binary_wilson_95": [
+        0.8638708406922242,
+        0.920543809705624
+      ],
+      "fp32_accuracy": 0.9555555555555556,
+      "fp32_correct": 430,
+      "fp32_wilson_95": [
+        0.9323511924596783,
+        0.971047702661439
+      ],
+      "paired_accuracy_delta_binary_minus_fp32": -0.06000000000000005,
+      "seed": 27,
+      "test_rows": 450
+    }
+  ],
+  "sample_size_for_5pp_margin_at_50pct": 385,
+  "seed_count": 3,
+  "source_experiment": "article-02-digits-binary",
+  "test_rows": 450
+}
